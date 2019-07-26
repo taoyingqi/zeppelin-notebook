@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\nsleep 5s\n\necho \"Modify some\"\n\necho \"Test add\"\n",
+      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\nsleep 5s\n\necho \"Modify some\"\n\necho \"Update token\"\n",
       "user": "admin",
-      "dateUpdated": "2019-07-26 09:42:57.858",
+      "dateUpdated": "2019-07-26 09:54:05.212",
       "config": {
         "colWidth": 12.0,
         "fontSize": 11.0,
@@ -39,9 +39,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%shell\ncd /opt/zeppelin/notebook\ngit log\ngit push -u origin master",
+      "text": "%shell\ncd /opt/zeppelin/notebook\ngit log",
       "user": "admin",
-      "dateUpdated": "2019-07-26 09:33:49.501",
+      "dateUpdated": "2019-07-26 09:54:08.322",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -102,7 +102,6 @@
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
-    "sh:shared_process": [],
     "shell:shared_process": []
   },
   "config": {
