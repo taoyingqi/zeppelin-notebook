@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\necho \"Modify some\"",
+      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\nsleep 5s\n\necho \"Modify some\"\n",
       "user": "admin",
-      "dateUpdated": "2019-07-26 09:28:00.525",
+      "dateUpdated": "2019-07-26 09:32:56.823",
       "config": {
         "colWidth": 12.0,
         "fontSize": 11.0,
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "azkaban-solo-server-0.1.0-SNAPSHOT.tar.gz\ncheck_parent_end.py\ncheck_parent_task_end.py\ncookie.txt\ninstall_jdk.sh\njdk-8u141-linux-x64.tar.gz\nzeppelin-0.8.1-bin-all.tgz\ntest success\n"
+            "data": "azkaban-solo-server-0.1.0-SNAPSHOT.tar.gz\ncheck_parent_end.py\ncheck_parent_task_end.py\ncookie.txt\ninstall_jdk.sh\njdk-8u141-linux-x64.tar.gz\nzeppelin-0.8.1-bin-all.tgz\ntest success\nModify some\n"
           }
         ]
       },
@@ -33,24 +33,66 @@
       "jobName": "paragraph_1564047454650_-440654995",
       "id": "20190725-173734_830790812",
       "dateCreated": "2019-07-25 17:37:34.650",
-      "dateStarted": "2019-07-25 18:08:38.579",
-      "dateFinished": "2019-07-25 18:08:38.610",
+      "dateStarted": "2019-07-26 09:33:09.721",
+      "dateFinished": "2019-07-26 09:33:14.766",
       "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\ncd /opt/zeppelin/notebook\ngit log\ngit push -u origin master",
+      "user": "admin",
+      "dateUpdated": "2019-07-26 09:33:49.501",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "commit 9e9f270387c054a57a8aef3600dc13e64ce5df00\nAuthor: taoyingqi \u003ctaoyingqi2013@sina.com\u003e\nDate:   Fri Jul 26 09:28:06 2019 +0800\n\n    Modify some\n\ncommit 2957b49c470729895c18024d1f2e41f79db0a39e\nAuthor: taoyingqi \u003ctaoyingqi2013@sina.com\u003e\nDate:   Fri Jul 26 09:26:52 2019 +0800\n\n    Add all\n\ncommit a7495c561699dc7af017e3147a668ffb0331c9b0\nAuthor: taoyingqi \u003ctaoyingqi2013@sina.com\u003e\nDate:   Fri Jul 26 09:13:36 2019 +0800\n\n    First commit\nfatal: unable to access \u0027https://github.com/taoyingqi/zeppelin-notebook.git/\u0027: TCP connection reset by peer\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 128"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564047481774_-1901479623",
+      "id": "20190725-173801_1722462653",
+      "dateCreated": "2019-07-25 17:38:01.774",
+      "dateStarted": "2019-07-26 09:33:49.518",
+      "dateFinished": "2019-07-26 09:34:18.248",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%shell\n",
       "user": "admin",
-      "dateUpdated": "2019-07-25 17:38:01.777",
+      "dateUpdated": "2019-07-26 09:31:29.134",
       "config": {},
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1564047481774_-1901479623",
-      "id": "20190725-173801_1722462653",
-      "dateCreated": "2019-07-25 17:38:01.774",
+      "jobName": "paragraph_1564104689131_-1969157725",
+      "id": "20190726-093129_497381211",
+      "dateCreated": "2019-07-26 09:31:29.131",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
