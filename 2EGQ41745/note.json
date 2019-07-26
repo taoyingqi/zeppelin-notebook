@@ -1,0 +1,84 @@
+{
+  "paragraphs": [
+    {
+      "text": "%shell\n\ntdate\u003d$(date +\"%Y-%m-%d\" -d \"-1 days\")\n\necho \"start $(date +\u0027%Y-%m-%d %H:%M:%S\u0027)\"\nsleep 5s\necho \"end $(date +\u0027%Y-%m-%d %H:%M:%S\u0027)\"",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 15:17:44.905",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "start 2019-07-25 17:36:01\nend 2019-07-25 17:36:06\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564038985488_1298380380",
+      "id": "20190725-151625_1866380110",
+      "dateCreated": "2019-07-25 15:16:25.488",
+      "dateStarted": "2019-07-25 17:36:01.221",
+      "dateFinished": "2019-07-25 17:36:06.267",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n\n\nls /tmp\nsleep 5s\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:30:02.164",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1564039048331_1604665605",
+      "id": "20190725-151728_262880259",
+      "dateCreated": "2019-07-25 15:17:28.331",
+      "dateStarted": "2019-07-25 17:36:01.794",
+      "dateFinished": "2019-07-25 17:34:09.815",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "test/test_task",
+  "id": "2EGQ41745",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "sh:shared_process": [],
+    "shell:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": true
+  },
+  "info": {}
+}

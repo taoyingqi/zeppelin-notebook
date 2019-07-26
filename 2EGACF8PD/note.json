@@ -1,0 +1,272 @@
+{
+  "paragraphs": [
+    {
+      "title": "多Notebook协调调度",
+      "text": "%sh\n# Login\n\ncurl -k -c cookie.txt --data \u0027userName\u003dadmin\u0026password\u003dhuazhu\u0027 http://192.168.56.105:9999/api/login\nsleep 1s\n# -b cookie.txt\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 17:36:57.849",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100   157  100   127  100    30   7241   1710 --:--:-- --:--:-- --:--:--  7470\n{\"status\":\"OK\",\"message\":\"\",\"body\":{\"principal\":\"admin\",\"ticket\":\"2a368a71-ffd1-4e0b-a4fb-e2563c1876f4\",\"roles\":\"[\\\"admin\\\"]\"}}"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564039724923_-362892374",
+      "id": "20190725-152844_1728822874",
+      "dateCreated": "2019-07-25 15:28:44.923",
+      "dateStarted": "2019-07-25 17:36:00.024",
+      "dateFinished": "2019-07-25 17:36:01.085",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n# Run a paragraph asynchronously\n\ncurl -k -b cookie.txt -X POST http://192.168.56.105:9999/api/notebook/job/2EGQ41745/20190725-151625_1866380110\n\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:59:24.103",
+      "config": {
+        "colWidth": 6.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0{\"status\":\"OK\"}\r100    15  100    15    0     0    953      0 --:--:-- --:--:-- --:--:--  1000\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564042608005_1063967197",
+      "id": "20190725-161648_1664032376",
+      "dateCreated": "2019-07-25 16:16:48.005",
+      "dateStarted": "2019-07-25 17:36:01.143",
+      "dateFinished": "2019-07-25 17:36:01.176",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n# Run a paragraph synchronously\n\ncurl -k -b cookie.txt -X POST http://192.168.56.105:9999/api/notebook/run/2EGQ41745/20190725-151728_262880259\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:46:32.029",
+      "config": {
+        "colWidth": 6.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r100   211  1{\"status\":\"OK\",\"body\":{\"code\":\"SUCCESS\",\"msg\":[{\"type\":\"TEXT\",\"data\":\"hsperfdata_root\\nks-script-QtmxlS\\npip-m35NKT-u0npac0k\\n  sy s2te11md  -p rivate-f3a1ddd2e9604c0a80213e9d59f7020d-chronyd.service-oHK00q\\nyum.log\\n\"}]}} 0     0     41      0  0:00:05  0:00:05 --:--:--    52\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564044036877_-1635412775",
+      "id": "20190725-164036_842403900",
+      "dateCreated": "2019-07-25 16:40:36.877",
+      "dateStarted": "2019-07-25 17:36:01.747",
+      "dateFinished": "2019-07-25 17:36:06.830",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n# Run all paragraphs\n# Not asynchronously\n\ncurl -k -b cookie.txt -X POST http://192.168.56.105:9999/api/notebook/job/2EG8UQ2A6",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:47:20.748",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0\r100    15  100    15    0     0      1      0  0:00:15  0:00:12  0:00:03     3\r100    15  100    15    0     0      1      0  0:00:15  0:00:12  0:00:03     3\n{\"status\":\"OK\"}"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564043118316_1801374655",
+      "id": "20190725-162518_2122964023",
+      "dateCreated": "2019-07-25 16:25:18.316",
+      "dateStarted": "2019-07-25 17:36:06.898",
+      "dateFinished": "2019-07-25 17:36:19.868",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\ncat cookie.txt",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:46:31.804",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "# Netscape HTTP Cookie File\n# http://curl.haxx.se/docs/http-cookies.html\n# This file was generated by libcurl! Edit at your own risk.\n\n192.168.56.105\tFALSE\t/\tFALSE\t1564047360\trememberMe\tdeleteMe\n#HttpOnly_192.168.56.105\tFALSE\t/\tFALSE\t0\tJSESSIONID\t3a865830-8724-4be3-a769-519b6c7f1a5a\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564042043504_-1664898699",
+      "id": "20190725-160723_924229823",
+      "dateCreated": "2019-07-25 16:07:23.504",
+      "dateStarted": "2019-07-25 17:36:19.922",
+      "dateFinished": "2019-07-25 17:36:19.932",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n# List of the notes\n\n# curl -b cookie.txt -X GET http://192.168.56.105:9999/api/notebook | python -m json.tool\n\n# Get the status of all paragraphs\n\n# curl -b cookie.txt -X GET http://192.168.56.105:9999/api/notebook/job/2EGQ41745 | python -m json.tool\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:46:50.801",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1564042647517_689122322",
+      "id": "20190725-161727_83202036",
+      "dateCreated": "2019-07-25 16:17:27.517",
+      "dateStarted": "2019-07-25 17:36:20.013",
+      "dateFinished": "2019-07-25 17:36:20.025",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 16:46:50.932",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1564043328033_-1427291226",
+      "id": "20190725-162848_593637388",
+      "dateCreated": "2019-07-25 16:28:48.033",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "test/test_restapi",
+  "id": "2EGACF8PD",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "sh:shared_process": [],
+    "shell:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false",
+    "cronExecutingUser": "",
+    "cronExecutingRoles": ""
+  },
+  "info": {}
+}

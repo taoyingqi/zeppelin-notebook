@@ -1,0 +1,74 @@
+{
+  "paragraphs": [
+    {
+      "text": "%shell\n\nls /opt/src\n\n",
+      "user": "test",
+      "dateUpdated": "2019-07-24 11:09:38.020",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "azkaban-solo-server-0.1.0-SNAPSHOT.tar.gz\ncheck_parent_end.py\ncheck_parent_task_end.py\ncookie.txt\ninstall_jdk.sh\njdk-8u141-linux-x64.tar.gz\nzeppelin-0.8.1-bin-all.tgz\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1563937336536_-912849740",
+      "id": "20190724-110216_1181811271",
+      "dateCreated": "2019-07-24 11:02:16.536",
+      "dateStarted": "2019-07-26 09:20:00.009",
+      "dateFinished": "2019-07-26 09:20:00.063",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n",
+      "user": "test",
+      "dateUpdated": "2019-07-24 11:02:49.491",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1563937369490_1999279302",
+      "id": "20190724-110249_1305406365",
+      "dateCreated": "2019-07-24 11:02:49.490",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "/test/test_shell",
+  "id": "2EGXMX5GR",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "shell:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false",
+    "cronExecutingUser": "test",
+    "cronExecutingRoles": "[\"role1\"]",
+    "cron": "0 0/1 * * * ?"
+  },
+  "info": {}
+}

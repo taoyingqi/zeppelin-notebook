@@ -1,0 +1,69 @@
+{
+  "paragraphs": [
+    {
+      "text": "%shell\n\nls /opt/src\n\necho \"test success\"",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 18:08:38.551",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 11.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "azkaban-solo-server-0.1.0-SNAPSHOT.tar.gz\ncheck_parent_end.py\ncheck_parent_task_end.py\ncookie.txt\ninstall_jdk.sh\njdk-8u141-linux-x64.tar.gz\nzeppelin-0.8.1-bin-all.tgz\ntest success\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1564047454650_-440654995",
+      "id": "20190725-173734_830790812",
+      "dateCreated": "2019-07-25 17:37:34.650",
+      "dateStarted": "2019-07-25 18:08:38.579",
+      "dateFinished": "2019-07-25 18:08:38.610",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%shell\n",
+      "user": "admin",
+      "dateUpdated": "2019-07-25 17:38:01.777",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1564047481774_-1901479623",
+      "id": "20190725-173801_1722462653",
+      "dateCreated": "2019-07-25 17:38:01.774",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "test/test_git_sync",
+  "id": "2EGGUFQVQ",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "shell:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": true
+  },
+  "info": {}
+}
