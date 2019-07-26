@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%shell\n\nls /opt/src\n\necho \"test success\"",
+      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\necho \"Modify some\"",
       "user": "admin",
-      "dateUpdated": "2019-07-25 18:08:38.551",
+      "dateUpdated": "2019-07-26 09:28:00.525",
       "config": {
         "colWidth": 12.0,
         "fontSize": 11.0,
@@ -60,6 +60,7 @@
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
+    "sh:shared_process": [],
     "shell:shared_process": []
   },
   "config": {
