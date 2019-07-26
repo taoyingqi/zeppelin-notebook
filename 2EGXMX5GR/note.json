@@ -33,8 +33,8 @@
       "jobName": "paragraph_1563937336536_-912849740",
       "id": "20190724-110216_1181811271",
       "dateCreated": "2019-07-24 11:02:16.536",
-      "dateStarted": "2019-07-26 09:20:00.009",
-      "dateFinished": "2019-07-26 09:20:00.063",
+      "dateStarted": "2019-07-26 09:43:00.011",
+      "dateFinished": "2019-07-26 09:43:00.054",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -60,6 +60,7 @@
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
+    "sh:shared_process": [],
     "shell:shared_process": []
   },
   "config": {

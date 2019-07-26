@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\nsleep 5s\n\necho \"Modify some\"\n",
+      "text": "%shell\n\nls /opt/src\n\necho \"test success\"\n\nsleep 5s\n\necho \"Modify some\"\n\necho \"Test add\"\n",
       "user": "admin",
-      "dateUpdated": "2019-07-26 09:32:56.823",
+      "dateUpdated": "2019-07-26 09:42:57.858",
       "config": {
         "colWidth": 12.0,
         "fontSize": 11.0,
